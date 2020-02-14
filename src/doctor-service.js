@@ -15,7 +15,7 @@ export class DoctorService {
   async getDoctorsByIssue(issue) {
     try {
       let response = await fetch(`https://api.betterdoctor.com/2016-03-01/conditions?fields=${issue}&user_key=${process.env.API_KEY}`);
-      if (repsonse.status != 200 || response.ok != true) {
+      if (response.status != 200 || response.ok != true) {
         return false;
       } else {
         let jsonifiedResponse = response.json();
