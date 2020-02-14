@@ -12,6 +12,7 @@ _This website allows a user to enter a medical issue (e.g., "diabetes") or a doc
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
+| The webpage returns an error message when a user inputs a number | 5 | "Please enter a name." or "Please enter words containing only alphabetical characters." |
 | The webpage displays a list of doctors in the Portland, OR area that fit a search query describing a medical issue | "sore throat" | list of doctors in Portland, OR area that treat sore throats |
 | The webpage displays a list of doctors in the Portland, OR area that fit a search query of a name | "Sue" | list of doctors in Portland, OR area whose name includes the string "Sue" |
 | For each doctor in a query response, the webpage displays the first name, last name, address, whether or not the doctor is accepting new patients, phone number, and website (if available)  | "Mondragon" | "Cristina Fe Mondragon", "Clinic address: 800 SW 13th Ave Portland, OR 97205" "Accepting new patients", "Phone Number: 5032210161", "Website: not available" |
