@@ -11,11 +11,13 @@ export function showResultsByName(inputName) {
   const getElementsByName = function(nameResponse) {
     $("#search-inputs").hide();
     if (nameResponse === false) {
+      $("h3.if-results").hide();
       $("#output").append(`<h3>There was an error retrieving search results. <a href='index.html'>Click here</a> to try again.</h3>`);
     } else if (nameResponse.data.length === 0) {
+      $("h3.if-results").hide();
       $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria. <a href='index.html'>Click here</a> to try another search.</h3>`);
     } else if (nameResponse.data.length > 0) {
-      $("h3#if-results").show();
+      $("h3.if-results").show();
       nameResponse.data.forEach(function(doctor) {
         let portlandPractice = {};
         if (doctor.practices.length === 1) {
@@ -73,11 +75,13 @@ export function showResultsByIssue(inputIssue) {
   const getElementsByIssue = function(issueResponse) {
     $("#search-inputs").hide();
     if (issueResponse === false) {
+      $("h3.if-results").hide();
       $("#output").append(`<h3>There was an error retrieving search results. <a href='index.html'>Click here</a> to try again.</h3>`);
     } else if (issueResponse.data.length === 0) {
+      $("h3.if-results").hide();
       $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria. <a href='index.html'>Click here</a> to try another search.</h3>`);
     } else if (issueResponse.data.length > 0) {
-      $("h3#if-results").show();
+      $("h3.if-results").show();
       issueResponse.data.forEach(function(doctor) {
         let portlandPractice = {};
         if (doctor.practices.length === 1) {
