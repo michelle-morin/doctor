@@ -4,6 +4,28 @@
   <title>Doctor Finder</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Looking for a doctor?</h1>
+      <h3>Find Portland, OR area doctors by name or specialty</h3>
+    </div>
+    <div id="search-inputs">
+      <form id="name-search">
+        <h3>Search for a doctor by name:</h3>
+        <input type="text" class="form-control" id="name" required>
+        <button type="submit" class="btn btn-block">search!</button>
+      </form>
+      <form id="condition-search">
+        <h3>Find a doctor who treats a certain medical issue:</h3>
+        <input type="text" class="form-control" id="condition" placeholder="Type your medical issue here (e.g., sore throat). To search based on multiple medical issues, separate each medical issue with a comma." required>
+      </form>
+    </div>
+    <div id="output">
+      <ul id="name-results">
+      </ul>
+      <ul id="condition-results">
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
