@@ -45,9 +45,19 @@ export function showResultsByName(inputName) {
         } else {
           resultWebsite = "not available";
         }
-        $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>${acceptingNewPatients}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>Website: ${resultWebsite}</li></ul></li>`);
+        let specialties = [];
+        let specialty;
+        if (doctor.specialties.length > 0) {
+          for (let i=0; i<doctor.specialties.length; i++) {
+            specialties.push(doctor.specialties[i].name);
+          }
+          specialty = specialties.join(", ");
+        } else {
+          specialty = "not available";
+        }
+        $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>${acceptingNewPatients}</li><li>Specializes in: ${specialty}</li><li>Website: ${resultWebsite}</li></ul></li>`);
       });
-      $("#output").append("<a href='index.html'>Click here to search again</a>");
+      $("#output p").html("<a href='index.html'>Click here to search again</a>");
     }
     $("#output").show();
   };
@@ -97,9 +107,19 @@ export function showResultsByIssue(inputIssue) {
         } else {
           resultWebsite = "not available";
         }
-        $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>${acceptingNewPatients}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>Website: ${resultWebsite}</li></ul></li>`);
+        let specialties = [];
+        let specialty;
+        if (doctor.specialties.length > 0) {
+          for (let i=0; i<doctor.specialties.length; i++) {
+            specialties.push(doctor.specialties[i].name);
+          }
+          specialty = specialties.join(", ");
+        } else {
+          specialty = "not available";
+        }
+        $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>${acceptingNewPatients}</li><li>Specializes in: ${specialty}</li><li>Website: ${resultWebsite}</li></ul></li>`);
       });
-      $("#output").append("<a href='index.html'>Click here to search again</a>");
+      $("#output p").html("<a href='index.html'>Click here to search again</a>");
     }
     $("#output").show();
   };
