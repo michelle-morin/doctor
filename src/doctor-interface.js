@@ -12,10 +12,10 @@ export function showResultsByName(inputName) {
     $("#search-inputs").hide();
     if (nameResponse === false) {
       $("h3.if-results").hide();
-      $("#output").append(`<h3>There was an error retrieving search results. <a href='index.html'>Click here</a> to try again.</h3>`);
+      $("#output").append(`<h3>There was an error retrieving search results. Please try again.`);
     } else if (nameResponse.data.length === 0) {
       $("h3.if-results").hide();
-      $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria. <a href='index.html'>Click here</a> to try another search.</h3>`);
+      $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria.`);
     } else if (nameResponse.data.length > 0) {
       $("h3.if-results").show();
       nameResponse.data.forEach(function(doctor) {
@@ -59,7 +59,6 @@ export function showResultsByName(inputName) {
         }
         $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>${acceptingNewPatients}</li><li>Specializes in: ${specialty}</li><li>Website: ${resultWebsite}</li></ul></li>`);
       });
-      $("#output p").html("<a href='index.html'>Click here to search again</a>");
     }
     $("#output").show();
   };
@@ -76,10 +75,10 @@ export function showResultsByIssue(inputIssue) {
     $("#search-inputs").hide();
     if (issueResponse === false) {
       $("h3.if-results").hide();
-      $("#output").append(`<h3>There was an error retrieving search results. <a href='index.html'>Click here</a> to try again.</h3>`);
+      $("#output").append(`<h3>There was an error retrieving search results. Please try again.`);
     } else if (issueResponse.data.length === 0) {
       $("h3.if-results").hide();
-      $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria. <a href='index.html'>Click here</a> to try another search.</h3>`);
+      $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria.`);
     } else if (issueResponse.data.length > 0) {
       $("h3.if-results").show();
       issueResponse.data.forEach(function(doctor) {
@@ -123,7 +122,6 @@ export function showResultsByIssue(inputIssue) {
         }
         $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>${acceptingNewPatients}</li><li>Specializes in: ${specialty}</li><li>Website: ${resultWebsite}</li></ul></li>`);
       });
-      $("#output p").html("<a href='index.html'>Click here to search again</a>");
     }
     $("#output").show();
   };
