@@ -6,7 +6,7 @@
 
 ## Description
 
-_This website allows a user to enter a medical issue (e.g., "headache", "diabetes", etc.) or a doctor's name and receive a list of Portland, OR area doctor(s) matching the search query. The website displays up to 25 matching doctors for either search (by name or medical issue)._
+_This website allows a user to enter a medical issue (e.g., "diabetes") or a doctor's name and receive a list of Portland, OR area doctor(s) matching the search query. The website displays up to 25 matching doctors for each search option (by name or medical issue)._
 
 ## Specifications:
 
