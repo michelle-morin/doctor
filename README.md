@@ -24,37 +24,37 @@ _This application ..._
 
 ###### For macOS:
 _If Homebrew is not installed on your computer already, then install Homebrew by entering the following two commands in Terminal:_
-* $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+* ``$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
+* ``$ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile``
 
 _Install Git with the following command:_
-* $ brew install git
+* ``$ brew install git``
 
 _Next, install Node.js by entering the following command in Terminal:_
-* $ brew install node
+* ``$ brew install node``
 
 ###### For Windows:
 _Please visit the [Node.js website](https://nodejs.org/en/download/) for installation instructions._
 
-
 #### Install this application
 
 _Clone this repository via Terminal using the following commands:_
-* _$ cd desktop_
-* _$ git clone doctor-finder_
-* _$ cd doctor-finder_
-_Then, confirm that you have navigated to this project directory by entering "pwd" in Terminal._
+* ``$ cd desktop``
+* ``$ git clone https://github.com/michelle-morin/doctor``
+* ``$ cd doctor``
+_Then, confirm that you have navigated to the doctor project directory (e.g., by entering the command ``pwd`` in Terminal)._
 
-_Next, add .env file to project root directory using command ``touch .env``_
-* _add API_KEY = { replace this text in curly braces with your own API key for the Better Doctor API } to the first line of the .env file. You can make your own API key for the Better Doctor API [here]()_
+_Next, add a file named .env to project root directory using the command ``touch .env``_
+* Visit the Better Doctor [website](https://developer.betterdoctor.com/) and click "Get a free API key". Fill out the form, then your own API key should be listed on the front page (e.g., “a2c356ibgh44…..”) or under My Account > Applications.
+* On the first line of the .env file, add the following: API_KEY = {replace this text and curly braces with your own API key for the Better Doctor API}
 
 _Next, install npm at the project's root directory via the following command:_
-* _$ npm install_
+* ``$ npm install``
 
-_Open a live server of this page using the following command:_
-* _$ npm run start_
+_Open this application via live server using the following command:_
+* ``$ npm run start``
 
-_To view/edit the source code, open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
+_To view/edit the source code of this application, open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
 
 ## Technologies Used
 
