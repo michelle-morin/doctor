@@ -1,4 +1,4 @@
-import { showResultsByName, showResultsByIssue } from './api-ui.js';
+import { showResultsByName, showResultsByIssue } from './doctor-interface.js/index.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
