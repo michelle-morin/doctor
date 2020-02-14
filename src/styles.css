@@ -4,6 +4,10 @@ body {
   color: #111111;
 }
 
+h3#if-results {
+  display: none;
+}
+
 .jumbotron {
   margin-top: 1%;
   background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/s55-eye-0008.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1800&s=a041ed5f045fa7f71f688747671709f9");
@@ -11,6 +15,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5%;
+  border: 2px solid #ad0000;
 }
 
 .jumbotron h1 {
@@ -76,4 +81,13 @@ h3 {
 
 #issue-search {
   margin-top: 4%;
+}
+
+a {
+  color: #ad0000;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #111111;
 }
