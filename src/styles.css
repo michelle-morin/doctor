@@ -1,0 +1,79 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+.jumbotron {
+  margin-top: 1%;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/s55-eye-0008.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1800&s=a041ed5f045fa7f71f688747671709f9");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+.jumbotron h1 {
+  margin-top: 6%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  color: #111111;
+  -webkit-text-stroke-color: #f50606;
+  -webkit-text-stroke-width: 1.75px;
+}
+
+.jumbotron h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #f50606;
+  -webkit-text-stroke-color: #111111;
+  -webkit-text-stroke-width: 0.75px;
+}
+
+input.form-control {
+  background-color: transparent;
+  border: 1px solid #ad0000;
+  color: #111111;
+}
+
+input.form-control:active, input.form-control:focus {
+  background-color: transparent;
+  border: 1px solid #ad0000;
+  color: #111111;
+}
+
+button.btn {
+  background-color: transparent;
+  margin-top: 2%;
+  border: 1px solid #ad0000;
+  color: #ad0000;
+}
+
+button.btn:hover {
+  margin-top: 2%;
+  background-color: #ad0000;
+  color: #f5f5f5;
+}
+
+#output {
+  display: none;
+  max-height: 900px;
+  overflow-y: auto;
+}
+
+.card {
+  border: 2px solid #ad0000;
+  padding: 5%;
+  background-color: #f5f5f5;
+}
+
+h3 {
+  color: #ad0000;
+}
+
+#issue-search {
+  margin-top: 4%;
+}
