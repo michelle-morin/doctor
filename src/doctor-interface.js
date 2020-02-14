@@ -2,7 +2,6 @@ import { DoctorService } from './doctor-service';
 import $ from 'jquery';
 
 export function showResultsByName(inputName) {
-  // const inputName = $("input#name").val();
   $("ol#results").empty();
   (async () => {
     let doctorNameService = new DoctorService();
@@ -55,7 +54,6 @@ export function showResultsByName(inputName) {
 }
 
 export function showResultsByIssue(inputIssue) {
-  // const inputIssue = $("input#issue").val();
   $("ol#results").empty();
   (async () => {
     let doctorIssueService = new DoctorService();
