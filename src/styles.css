@@ -6,6 +6,8 @@ body {
 
 h3#if-results {
   display: none;
+  margin-bottom: 2%;
+  margin-top: -2%;
 }
 
 .jumbotron {
@@ -73,6 +75,7 @@ button.btn:hover {
   border: 2px solid #ad0000;
   padding: 5%;
   background-color: #f5f5f5;
+  margin-bottom: 3%;
 }
 
 h3 {
