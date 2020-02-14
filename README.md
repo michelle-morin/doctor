@@ -12,7 +12,11 @@ _This application ..._
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-
+| The webpage displays a list of doctors in the Portland, OR area that fit a search query describing a medical issue | "sore throat" |  |
+| The webpage displays a list of doctors in the Portland, OR area that fit a search query of a name | "Mondragon" | "Christina Mondragon" |
+| For each doctor in a query response, the webpage displays the first name, last name, address, phone number, website, and whether or not the doctor is accepting new patients | "Mondragon" |  |
+| The webpage displays an error message when the API call results in an error (any message that is not a 200 OK) | API call results in 400-level response status | "There was an error locating doctors matching your search. Click here to try again!" |
+| The webpage displays a notification stating that no doctors meet the user's search criteria when the query response does not include any doctors | API call returns empty data array | "Looks like no doctors match your search criteria. Click here to try a different search!" |
 
 ## Setup/Installation Requirements
 
