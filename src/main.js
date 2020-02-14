@@ -2,7 +2,7 @@ import { DoctorService } from './doctor-service';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './styles.css';
+import './styles.css';
 
 $(document).ready(function() {
   $("form#name-search").submit(function(event) {
@@ -47,9 +47,12 @@ $(document).ready(function() {
           } else {
             secondLineAddress = "";
           }
-          $("ol#results").append(`<li>${doctor.profile.first_name} ${doctor.profile.last_name}<ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>${acceptingNewPatients}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>Website: </li></ul></li>`);
+          let website;
+          // need logic to determine whether or not doctor has a website.
+          $("ol#results").append(`<li>${doctor.profile.first_name} ${doctor.profile.last_name}<ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>${acceptingNewPatients}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>Website: ${website}</li></ul></li>`);
         });
         $("#output").append("<a href='index.html'>Click here to search again</a>");
+        $("#output").show();
       }
     };
   });
@@ -96,9 +99,12 @@ $(document).ready(function() {
           } else {
             secondLineAddress = "";
           }
-          $("ol#results").append(`<li>${doctor.profile.first_name} ${doctor.profile.last_name}<ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>${acceptingNewPatients}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>Website: </li></ul></li>`);
+          let website;
+          // need logic to determine whether or not doctor has a website.
+          $("ol#results").append(`<li>${doctor.profile.first_name} ${doctor.profile.last_name}<ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>${acceptingNewPatients}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>Website: ${website}</li></ul></li>`);
         });
         $("#output").append("<a href='index.html'>Click here to search again</a>");
+        $("#output").show();
       }
     };
   });
