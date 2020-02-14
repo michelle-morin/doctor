@@ -1,8 +1,8 @@
 import { DoctorService } from './doctor-service';
 import $ from 'jquery';
 
-export function showResultsByName() {
-  const inputName = $("input#name").val();
+export function showResultsByName(inputName) {
+  // const inputName = $("input#name").val();
   $("ol#results").empty();
   (async () => {
     let doctorNameService = new DoctorService();
@@ -12,7 +12,7 @@ export function showResultsByName() {
   const getElementsByName = function(nameResponse) {
     $("#search-inputs").hide();
     if (nameResponse === false) {
-      $("#output").append(`<h3>There was an error. <a href='index.html'>Click here</a> to try again.</h3>`);
+      $("#output").append(`<h3>There was an error retrieving search results. <a href='index.html'>Click here</a> to try again.</h3>`);
     } else if (nameResponse.data.length === 0) {
       $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria. <a href='index.html'>Click here</a> to try another search.</h3>`);
     } else if (nameResponse.data.length > 0) {
@@ -55,8 +55,8 @@ export function showResultsByName() {
   };
 }
 
-export function showResultsByIssue() {
-  const inputIssue = $("input#issue").val();
+export function showResultsByIssue(inputIssue) {
+  // const inputIssue = $("input#issue").val();
   $("ol#results").empty();
   (async () => {
     let doctorIssueService = new DoctorService();
@@ -66,7 +66,7 @@ export function showResultsByIssue() {
   const getElementsByIssue = function(issueResponse) {
     $("#search-inputs").hide();
     if (issueResponse === false) {
-      $("#output").append(`<h3>There was an error. <a href='index.html'>Click here</a> to try again.</h3>`);
+      $("#output").append(`<h3>There was an error retrieving search results. <a href='index.html'>Click here</a> to try again.</h3>`);
     } else if (issueResponse.data.length === 0) {
       $("#output").append(`<h3>Unfortunately, there are no Portland, OR area doctors matching your search criteria. <a href='index.html'>Click here</a> to try another search.</h3>`);
     } else if (issueResponse.data.length > 0) {

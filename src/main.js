@@ -7,10 +7,12 @@ import './styles.css';
 $(document).ready(function() {
   $("form#name-search").submit(function(event) {
     event.preventDefault();
-    showResultsByName();
+    const inputName = $("input#name").val();
+    showResultsByName(inputName);
   });
   $("form#issue-search").submit(function(event) {
     event.preventDefault();
-    showResultsByIssue();
+    const inputIssue = $("input#issue").val();
+    showResultsByIssue(inputIssue);
   });
 });
