@@ -4,7 +4,7 @@ body {
   color: #111111;
 }
 
-.jumbotron {
+#main-page {
   margin-top: 1%;
   background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/s55-eye-0008.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1800&s=a041ed5f045fa7f71f688747671709f9");
   background-position: center;
@@ -14,7 +14,7 @@ body {
   border: 2px solid #ad0000;
 }
 
-.jumbotron h1 {
+#main-page h1 {
   margin-top: 6%;
   margin-bottom: 8%;
   text-align: left;
@@ -25,7 +25,7 @@ body {
   -webkit-text-stroke-width: 2px;
 }
 
-.jumbotron h2 {
+#main-pagen h2 {
   margin-left: 60%;
   margin-top: -5%;
   margin-bottom: 8%;
@@ -72,8 +72,11 @@ button.btn:hover {
   color: #f5f5f5;
 }
 
-#output {
+#outputs {
   display: none;
+}
+
+#output {
   max-height: 800px;
   overflow-y: auto;
 }
@@ -92,4 +95,11 @@ a {
 
 a:hover {
   color: #111111;
+}
+
+#output-page {
+  margin-top: 1%;
+  padding: 10%;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/job26-s56-por-048-l_2.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=2048&s=4df6609d08a52618f7b8e4e9d0a78284");
+  background-size: 10%;
 }
