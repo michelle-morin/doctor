@@ -5,27 +5,33 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Looking for a doctor?</h1>
-      <h2>Find a doctor in Portland, OR<br>by name or specialty</h2>
+    <div id="search-inputs">
+      <div class="jumbotron" id="main-page">
+        <h1>Looking for a doctor?</h1>
+        <h2>Find a doctor in Portland, OR<br>by name or specialty</h2>
+      </div>
+      <div class="card">
+        <form id="name-search">
+          <h3>Search for a doctor by name:</h3>
+          <input type="text" class="form-control" id="name" required>
+          <button type="submit" class="btn btn-block">search!</button>
+        </form>
+        <form id="issue-search">
+          <h3>Find a doctor who treats a certain medical issue:</h3>
+          <input type="text" class="form-control" id="issue" placeholder="To search based on multiple medical issues, separate each with a comma." required>
+          <button type="submit" class="btn btn-block">search!</button>
+        </form>
+      </div>
     </div>
-    <div id="search-inputs" class="card">
-      <form id="name-search">
-        <h3>Search for a doctor by name:</h3>
-        <input type="text" class="form-control" id="name" required>
-        <button type="submit" class="btn btn-block">search!</button>
-      </form>
-      <form id="issue-search">
-        <h3>Find a doctor who treats a certain medical issue:</h3>
-        <input type="text" class="form-control" id="issue" placeholder="To search based on multiple medical issues, separate each with a comma." required>
-        <button type="submit" class="btn btn-block">search!</button>
-      </form>
-    </div>
-    <div id="output" class="card">
-      <h3></h3>
-      <ol id="results">
-      </ol>
-      <p><a href='index.html'>Click here</a> to try another search.</p>
+    <div id="outputs">
+      <div class="jumbotron" id="output-page">
+      </div>
+      <div id="output" class="card">
+        <h3></h3>
+        <ol id="results">
+        </ol>
+        <p><a href='index.html'>Click here</a> to try another search.</p>
+      </div>
     </div>
   </div>
 </body>
