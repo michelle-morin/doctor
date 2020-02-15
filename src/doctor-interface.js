@@ -58,7 +58,7 @@ export function showResultsByName(inputName) {
         $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>${acceptingNewPatients}</li><li>Specializes in: ${specialty}</li><li>Website: ${resultWebsite}</li></ul></li>`);
       });
     }
-    $("#output").show();
+    $("#outputs").show();
   };
 }
 
@@ -119,6 +119,6 @@ export function showResultsByIssue(inputIssue) {
         $("ol#results").append(`<li><strong>${doctor.profile.first_name} ${doctor.profile.last_name}</strong><ul><li>Clinic address: ${portlandPractice.visit_address.street} ${secondLineAddress} ${portlandPractice.visit_address.city}, ${portlandPractice.visit_address.state} ${portlandPractice.visit_address.zip}</li><li>Phone Number: ${portlandPractice.phones[0].number}</li><li>${acceptingNewPatients}</li><li>Specializes in: ${specialty}</li><li>Website: ${resultWebsite}</li></ul></li>`);
       });
     }
-    $("#output").show();
+    $("#outputs").show();
   };
 }
